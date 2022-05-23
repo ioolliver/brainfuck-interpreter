@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brainfuck Interpreter</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  
+  <header id="header">
+    <h1>Brainfuck Interpreter</h1>
+  </header>
+
+  <section id="interpreter">
+
+    <div id="memory">
+      <div>
+        <table>
+          <tr id="memory-row">
+            <td>
+              <p>0</p>
+              <span>0</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>1</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>2</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>3</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>4</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>5</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>6</span>
+            </td>
+            <td>
+              <p>0</p>
+              <span>7</span>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="output">
+
+        <p>Output:</p> <span id="output-span"></span>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="docs">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor dignissimos nisi odio magnam maiores, repellendus, voluptatem eum atque nesciunt deserunt non animi laboriosam alias, nobis distinctio quae perferendis nulla reiciendis.</p>
+      </div>
+      <div class="editor">
+        <div id="control-pane">
+
+          <button onclick="runCode()">Run</button>
+          <button onclick="stepCode()">Step</button>
+          <button onclick="pauseCode()">Pause</button>
+          <button onclick="continueCode()">Continue</button>
+          <div>
+            <p>Speed (instructions per second):</p>
+            <span>1 i/s</span><input type="range" min="1" value="3" max="30"><span>30 i/s</span>
+          </div>
+
+        </div>
+        <div id="code-editor">
+          <textarea name="Code editor" autocapitalize="off" spellcheck="false"></textarea>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
